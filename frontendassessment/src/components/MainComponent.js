@@ -1,30 +1,21 @@
 import React from "react";
-import Header from "./HeaderComponents";
-import Footer from "./FooterComponents";
+import { render } from "react-dom";
+
+import {Link } from "react-router-dom";
 
 
-import Home from "./HomeComponent";
-import About from "./AboutComponent";
-
-import {Routes, Router, Redirect, withRouter} from 'react-router-dom'
 
 function Main (){
-    return(
-        <React.Fragment>
-            <Header/>
-            
-            <Routes>
+
+        return(
+            <div>Test Main Component
                 
-                <Routes path='/home' component={Home}/>
-                <Routes path='/about' component={About}/>
-
-            </Routes>
 
 
+                
+            </div>
+        )
 
-            <Footer/>
-        </React.Fragment>
-    )
 }
 
-export default withRouter(Main);
+export default Main;
