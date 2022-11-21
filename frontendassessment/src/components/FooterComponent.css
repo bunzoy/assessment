@@ -1,0 +1,12 @@
+.Footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 20px;
+}
+
+.Footer h5 {
+    font-size: 25px;
+
+}
