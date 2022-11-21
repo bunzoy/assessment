@@ -1,16 +1,33 @@
 import React from "react";
+import './NavComponent.css';
+
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 export function Main (){
 
-        return(
-            <div class="flex-1 overflow-y-scroll">
-                <h1>MainComponent</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis risus vitae erat ultricies hendrerit. Vivamus consequat velit lectus, a sagittis arcu luctus ac. Nam a ante commodo, vehicula leo vel, dignissim enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam porttitor ante ligula, a venenatis risus tristique sit amet. Donec nec blandit nibh, vel viverra ligula. In elementum posuere tortor quis placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse dapibus tellus id arcu auctor venenatis. Praesent porttitor pulvinar nibh feugiat imperdiet. Vivamus luctus maximus ex at vestibulum.</p>
-            </div>
+    const { isLoaded } = useLoadScript({ 
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY, 
+    });
 
-        )
+    if (!isLoaded) return <div>Loading...</div>
+    
+    return(
+        <Map />
 
+    )
 }
+    
+function Map() {
+    return 
+        <GoogleMap 
+            zoom={10} 
+            center={{ lat: 59.4153337, lng: 10.4822852 }} 
+            mapContainerClassName="map-container"
+        >
+        </GoogleMap>;
+    }
+
+
 
 
 
