@@ -1,33 +1,25 @@
-import React from "react";
-import './NavComponent.css';
+import React, {useState} from "react";
+import './HeaderComponent.css';
+import ReactMapGL from "react-map-gl";
 
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+
 
 export function Main (){
-
-    const { isLoaded } = useLoadScript({ 
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY, 
+    const [viewport, setViewport] = useState({
+        latitud: 59.4101728,
+        longitude: 10.4437392,
+        width: '100vw',
+        height: '100vh',
+        zoom: 10
     });
-
-    if (!isLoaded) return <div>Loading...</div>
     
-    return(
-        <Map />
-
-    )
+    return (
+        <div>
+            <ReactMapGL {...viewport}> markers here </ReactMapGL>
+        </div>
+    );
 }
     
-function Map() {
-    return 
-        <GoogleMap 
-            zoom={10} 
-            center={{ lat: 59.4153337, lng: 10.4822852 }} 
-            mapContainerClassName="map-container"
-        >
-        </GoogleMap>;
-    }
-
-
 
 
 
