@@ -1,6 +1,7 @@
 import React from "react";
 import './FooterComponent.css';
 
+
 export function Footer () {
     return(
         <div className="Footer">
@@ -8,5 +9,6 @@ export function Footer () {
         </div>
     )
 }
+
 
 export default Footer;

@@ -11,7 +11,7 @@ import { Route, Routes, Link  } from 'react-router-dom/dist';
 export function App() {
   return (
     <>
-    <Header/>
+      <Header/>
 
       <Routes>
         <Route path="/" element={<Main/>} />
@@ -19,7 +19,7 @@ export function App() {
         <Route path="/About" element={<About/>} />
       </Routes>   
 
-    <Footer/>
+      <Footer/>
     </>
   )
 }
