@@ -1,7 +1,6 @@
 import React from "react";
 import './Style.css';
 
-
 export function About() {
     return(
         <div className="AboutBody">
@@ -16,14 +15,14 @@ However, the implementation of these requirements is open to interpretation. Thi
 includes adding and removing these fences. They also want to be able to label each fence with a name.
 </p>
             <h4>Technology requirements</h4>
-            <p>The app is built as a SPA (Single Page Application). You are allowed to use any front-end framework of your choice. However, it would be
-preferable that either React, Angular, or Vue is used.</p>
-            <p>Git is used as the version control system.</p>
-            <p>GitHub is used to host the codebase.</p>
+            <p><s>The app is built as a SPA (Single Page Application). You are allowed to use any front-end framework of your choice. However, it would be
+preferable that either React, Angular, or Vue is used.</s></p>
+            <p><s>Git is used as the version control system.</s></p>
+            <p><s>GitHub is used to host the codebase.</s></p>
             <p>(optional) Docker is used to containerizing the application.</p>
 
             <h4>Technology requirements</h4>
-            <p>Should integrate with an already existing map solution (Mapbox?).</p>
+            <p><s>Should integrate with an already existing map solution (Mapbox?).</s></p>
             <p>Should be able to add a virtual geofence on the map.</p>
             <p>Should be able to label the virtual geofence.</p>
             <p>Should be able to remove a virtual geofence from the map.</p>

@@ -3,10 +3,7 @@ import './Style.css';
 import mapboxgl from 'mapbox-gl'; 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-
-
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnVuem95IiwiYSI6ImNsYXM5YWxmazAydTEzdGtqbm9ndjNiMWsifQ.esiqirmwHhQrHTxTIcYoSg';
-
 
 export  class Map extends React.PureComponent {
 
@@ -60,5 +57,4 @@ export  class Map extends React.PureComponent {
 
 }
     
-
 export default Map;
