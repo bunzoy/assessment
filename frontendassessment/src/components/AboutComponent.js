@@ -1,15 +1,39 @@
 import React from "react";
+import './Style.css';
 
 
 export function About() {
     return(
-        <div>
-            <h1>AboutComponent</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quam ex, porttitor quis nulla sed, blandit egestas orci. Nulla lobortis, lectus vel ultricies ullamcorper, sem magna porta neque, vel mollis magna nisi quis sem. Morbi risus enim, porttitor non velit eu, aliquam fermentum odio. Mauris dignissim at arcu non hendrerit. Pellentesque vehicula tortor non lacinia condimentum. Ut at nunc aliquam orci viverra lobortis. Sed in urna facilisis, eleifend nibh nec, porttitor elit. Fusce fringilla lectus nec ornare feugiat. Integer quis fringilla purus. Duis condimentum elit id placerat bibendum. Vestibulum maximus rhoncus metus eget consectetur. Aliquam in metus nec nulla blandit hendrerit vel eu nulla. Phasellus ut porttitor felis, commodo hendrerit turpis. Morbi tristique lacus quis molestie venenatis. Nulla finibus porttitor odio. Donec quis nulla sit amet erat tristique volutpat condimentum quis ante.
+        <div className="AboutBody">
 
-Proin eu eros eu leo aliquet accumsan. In at ante sollicitudin, feugiat leo viverra, varius sem. Suspendisse laoreet odio nisi, volutpat pellentesque mauris ultricies id. Fusce neque ex, rutrum in suscipit commodo, venenatis sit amet augue. Cras nec nibh sit amet libero tempus aliquet. Cras tempor, dui rhoncus tristique lacinia, orci lacus interdum quam, vel blandit turpis metus eu urna. Pellentesque ac commodo dolor. Morbi eget gravida libero. Nullam vulputate dolor semper dolor auctor porttitor.
+            <h2>Front-end skills assessment</h2>
+            <h3>Introduction</h3>
+            <p>This is a skill-based assessment for front-end development. The following Test description will have a set of requirements that must be met.
+However, the implementation of these requirements is open to interpretation. This means that you can solve this test however you want</p>
+            
+            <h3>Test description</h3>
+            <p>You have been commissioned to build a web app for a customer. They want to be able to manage virtual geofences on a map. This
+includes adding and removing these fences. They also want to be able to label each fence with a name.
+</p>
+            <h4>Technology requirements</h4>
+            <p>The app is built as a SPA (Single Page Application). You are allowed to use any front-end framework of your choice. However, it would be
+preferable that either React, Angular, or Vue is used.</p>
+            <p>Git is used as the version control system.</p>
+            <p>GitHub is used to host the codebase.</p>
+            <p>(optional) Docker is used to containerizing the application.</p>
 
-Ut in efficitur est. Nunc rhoncus sem purus, nec semper tellus luctus eget. Quisque magna tellus, mollis eu feugiat non, eleifend ac lectus. Nulla a lacus quis ligula elementum commodo. In hac habitasse platea dictumst. Maecenas vel rhoncus sem, nec tristique ipsum. Suspendisse tincidunt tincidunt egestas. In faucibus tristique urna quis tempus.</p>
+            <h4>Technology requirements</h4>
+            <p>Should integrate with an already existing map solution (Mapbox?).</p>
+            <p>Should be able to add a virtual geofence on the map.</p>
+            <p>Should be able to label the virtual geofence.</p>
+            <p>Should be able to remove a virtual geofence from the map.</p>
+            <p>Should persist the state between page refreshes.</p>
+            <p>(optional) Should be mobile-friendly.</p>
+            
+            <h4>Out of scope</h4>
+            <p>You don’t need any authentication scheme.</p>
+            <p>You don’t need to host the application on a server.</p>
+            <p>You don’t need a back-end solution for persistence.</p>
         </div>
 
     )

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Main } from './components/MainComponent'
-import { Home } from './components/HomeComponent'
+import { Map } from './components/MapComponent'
 import { About } from './components/AboutComponent'
 import Header from './components/HeaderComponent';
 import Footer from './components/FooterComponent';
@@ -14,8 +13,7 @@ export function App() {
       <Header/>
 
       <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/Home" element={<Home/>} />
+        <Route path="/" element={<Map/>} />
         <Route path="/About" element={<About/>} />
       </Routes>   
 

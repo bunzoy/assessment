@@ -1,0 +1,68 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.Header h1 {
+    color: black;
+    margin-left: 20px;
+}
+
+.Nav {
+    position: static;
+    margin-left: 3%;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    font-size: 2vh;
+}
+
+li {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*Map*/
+.map-container {
+    height: 400px;
+}
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }
+
+/*About body*/
+.AboutBody {
+    margin: 0px 20px 80px 20px;
+}
+
+.AboutBody h3 h4 {
+    margin-top: 10px;
+}
+
+/*Footer*/
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 20px;
+    background-color: white;
+}

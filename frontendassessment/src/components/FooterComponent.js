@@ -1,11 +1,11 @@
 import React from "react";
-import './FooterComponent.css';
+import './Style.css';
 
 
 export function Footer () {
     return(
         <div className="Footer">
-            <h1>Footer</h1>
+            <h2>Footer</h2>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './HeaderComponent.css';
+import './Style.css';
 import {Link } from "react-router-dom";
 
 
@@ -9,8 +9,7 @@ export function Header () {
             <h1 className={Header.H1}>Frontend assessment</h1>    
 
             <ul>
-                <li><Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>Main</Link></li>
-                <li><Link to="/Home" style={{ textDecoration: 'none' , color: 'black' }}>Home</Link></li>
+                <li><Link to="/" style={{ textDecoration: 'none' , color: 'black' }}>Map</Link></li>
                 <li><Link to="/About" style={{ textDecoration: 'none' , color: 'black' }}>About</Link></li>
             </ul>          
         </div>
