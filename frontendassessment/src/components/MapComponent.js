@@ -10,7 +10,7 @@ export  class Map extends React.PureComponent {
     constructor(props) {
         super(props);
 
-        this.state = {
+        this.state = JSON.parse(window.localStorage.getItem('state')) || {
             lng: 10.4821,
             lat: 59.4152,
             zoom: 13
@@ -18,6 +18,11 @@ export  class Map extends React.PureComponent {
 
         this.mapContainer = React.createRef();
     }
+
+    setState(state) {
+        window.localStorage.setItem('state', JSON.stringify(state));
+        super.setState(state);
+      }
 
     componentDidMount() {
         const { lng, lat, zoom } = this.state;
@@ -43,10 +48,7 @@ export  class Map extends React.PureComponent {
 
         return (
             <div>
-                
-                
                 <div ref={this.mapContainer} className="map-container" />
-
                 <div className="sidebar">
                     Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                 </div>

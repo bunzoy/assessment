@@ -26,7 +26,7 @@ preferable that either React, Angular, or Vue is used.</s></p>
             <p>Should be able to add a virtual geofence on the map.</p>
             <p>Should be able to label the virtual geofence.</p>
             <p>Should be able to remove a virtual geofence from the map.</p>
-            <p>Should persist the state between page refreshes.</p>
+            <p><s>Should persist the state between page refreshes.</s></p>
             <p>(optional) Should be mobile-friendly.</p>
             
             <h4>Out of scope</h4>
